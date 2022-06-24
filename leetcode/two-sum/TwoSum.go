@@ -8,6 +8,7 @@ func main() {
 
 func twoSum(nums []int, target int) []int {
 	// len(nums) 获取nums的长度
+	// make用来构建指定的类型
 	// 映射两种初始换的方式
 	// 1) make(map[int]int, len(nums))
 	// 2) map[string]string{"Red": "#da1337", "Orange": "#e95a22"}
