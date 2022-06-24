@@ -52,6 +52,9 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return result
 }
 
+// 方法的参数传递是值传递，引用和指针传递的是对引用和指针值的复制，
+// 在方法中重新赋值不会修改原来的指向的对象，但可以修改指向对象属性的值，
+// 和Java类似传递机制类似
 func generateAddedNode(num1 int, num2 int, carry *int, nextNode *ListNode) *ListNode {
 	sum := addTowNumber(num1, num2, carry)
 	if nextNode == nil {
