@@ -16,6 +16,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil && l2 == nil {
 		return nil
 	}
+	//var node ListNode 声明了一个类型为ListNode的变量node,node指向结构体里面都是对应类型的默认值，只有指针才可能为null
 	var result *ListNode
 	var nextNode *ListNode
 	var carry = 0
