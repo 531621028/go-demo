@@ -9,12 +9,12 @@ func main() {
 }
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
-	mergeNums := mergeNums(nums1, nums2)
-	totalSize := len(mergeNums)
+	mergedNums := mergeNums(nums1, nums2)
+	totalSize := len(mergedNums)
 	if (totalSize % 2) != 0 {
-		return float64(mergeNums[totalSize/2])
+		return float64(mergedNums[totalSize/2])
 	} else {
-		return (float64(mergeNums[totalSize/2]) + float64(mergeNums[totalSize/2-1])) / 2
+		return (float64(mergedNums[totalSize/2]) + float64(mergedNums[totalSize/2-1])) / 2
 	}
 }
 
